@@ -1,0 +1,393 @@
+    
+    
+    body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    }
+
+    body.str1 {
+    background-color: #2377b5;
+    }
+
+    body.str2 {
+        background-color: whitesmoke;
+    }
+
+    p {
+        margin-bottom: 2.5%;
+    }
+
+    header {
+    display: flex;
+    position: fixed;
+    flex-direction: row;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Ustalona wysokość nagłówka */
+    background-color: white;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center; /* Wyrównuje elementy do środka w pionie */
+    justify-content: flex-start; /* Rozdziela podpis i przyciski na boki */
+    }
+
+    .signature {
+        height: 100%; /* Dopasowanie podpisu do wysokości nagłówka */
+        object-fit: contain; /* Dostosowanie obrazu */
+        margin-left: 5%;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start; /* Wyrównanie przycisków do dołu */
+        gap: 10px;
+        margin-right: 20%;
+    }
+
+    button {
+        width: 150px;
+        height: 40px;
+        background-color: white;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        border: 2px solid white;
+        padding: 0 0;
+        cursor: pointer;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 5px;
+        transition: background-color 0.5s;
+        
+    }
+
+    button:hover {
+        background-color: #2377b5;
+        color: white;
+    }
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+    display: flex;
+    align-items: flex-start; /* Ustawienie wyrównania do góry */
+    padding-top: 100px;
+    padding-left: 5%;
+    padding-right: 5%;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    gap: 5%;
+    /* max-width: 1200px; Ograniczenie szerokości kontenera */
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        padding-top: 100px;
+        padding-left: 5%;
+        padding-right: 5%;
+        background-color: whitesmoke;
+        margin: 0 auto;
+        gap: 200px; /* Określenie odstępu w px */
+        height: auto; /* Pozwól, by kontener dostosował swoją wysokość do zawartości */
+    }
+
+    
+
+    .opinions {
+    display: flex;
+    align-items: start; /* Ustawienie wyrównania do góry */
+    justify-content: center;
+    border:#2377b5;
+    padding-top: 5%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 0;
+    background-color: #2377b5;
+    gap: 5%;
+    flex-direction: row;
+    margin: 0;
+    /* max-width: 1200px; Ograniczenie szerokości kontenera */
+    }
+
+    .opinion {
+        width: 45%;
+        height: 40%;
+        background-color: whitesmoke;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        border: 2px solid whitesmoke;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 5px;
+        margin: 0;
+    }
+    .opinion2 {
+        width: 45%;
+        height: 40%;
+        background-color: whitesmoke;
+        color: black;
+        font-size: 20px;
+        font-weight: 500;
+        border: 2px solid whitesmoke;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-top: 10px;
+        font-family: 'Roboto', sans-serif;
+        border-radius: 5px;
+        margin-bottom: 40px;
+    }
+    .text{
+        flex: 1;
+        font-size: x-large;
+        background-color: whitesmoke;
+        border-radius: 8px;
+        justify-content: flex-start;
+        padding-top: 8%;
+    }
+
+    .image {
+        width: 450px;
+        height: auto;
+        border-radius: 8px;
+        background-color: whitesmoke;
+        margin-top: 3%;
+        margin-bottom: 3%;
+        margin-left: 0;
+    }
+
+    .signature {
+        width: 200px;
+        height: auto;
+        border-radius: 8px;
+        background-color: white;
+        margin-top: 0;
+        padding-right: 30%;
+    }
+
+    .face {
+        width: 70px;
+        padding: 0;
+        margin: 0;
+    }
+
+    .bigger {
+        font-size: 50px;
+        font-weight: bolder;
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding-left: 2%;
+        padding-top: 0;
+        padding-top: 0;
+        padding-bottom: 1%;
+    }
+
+    footer {
+        padding-left: 5%;
+        
+    }
+
+    a {
+        color: black;
+    }
+
+    @media(max-width: 768px){
+        .container {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .image {
+            width: 100%;
+        }
+        .opinions {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: start; /* Ustawienie wyrównania do góry */
+            justify-content: center;
+            border:#2377b5;
+            padding-top: 5%;
+            padding-bottom: 0;
+            background-color: #2377b5;
+            margin: 0;
+            /* max-width: 1200px; Ograniczenie szerokości kontenera */
+            }
+            .opinion {
+                width: auto;
+                height: 40%;
+                background-color: whitesmoke;
+                color: black;
+                font-size: 20px;
+                font-weight: 500;
+                border: 2px solid whitesmoke;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                padding-top: 10px;
+                font-family: 'Roboto', sans-serif;
+                border-radius: 5px;
+                margin: 0;
+            }
+            .opinion2 {
+                width: auto;
+                height: 40%;
+                background-color: whitesmoke;
+                color: black;
+                font-size: 20px;
+                font-weight: 500;
+                border: 2px solid whitesmoke;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 20px;
+                padding-top: 10px;
+                font-family: 'Roboto', sans-serif;
+                border-radius: 5px;
+                margin-bottom: 40px;
+            }
+            .signature {
+                padding: 10px;
+            }
+            nav {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start; /* Wyrównanie przycisków do dołu */
+                gap: 10px;
+                margin-right: 10px;
+            }
+            button {
+                width: 150px;
+                height: 20px;
+                background-color: white;
+                color: black;
+                font-size: 20px;
+                font-weight: 500;
+                border: 2px solid white;
+                padding: 0 0;
+                cursor: pointer;
+                font-family: 'Roboto', sans-serif;
+                border-radius: 5px;
+                transition: background-color 0.5s;
+                
+            }
+            #gallery {
+                background-color: #f4f4f9;
+                padding-top: 300px;
+                padding-left: 50px;
+                padding-right: 50px;
+                max-width: 1200px;
+                margin: 0 auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+    }
+
+    #clock {
+        font-family: Arial, sans-serif;
+        font-size: 40px;
+        font-weight: bold;
+        color: #333;
+        text-align: center;
+        margin: 20px;
+      }
+
+
+    #contact {
+        background-color: #2378b5;
+        padding-top: 25px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-bottom: 25px;
+        max-width: 800px;
+        margin: 0 auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    #contact h2 {
+        text-align: center;
+        color: white;
+        font-size: 2em;
+    }
+    
+    form {
+        display: grid;
+        gap: 20px;
+    }
+    
+    label {
+        font-weight: bold;
+        color: white;
+    }
+    
+    input, select, textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    
+    textarea {
+        height: 150px;
+        resize: none;
+    }
+    
+    #gallery {
+        background-color: #f4f4f9;
+        padding: 50px;
+        max-width: 1200px;
+        margin: 0 auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    
+    #gallery h2 {
+        text-align: center;
+        color: #333;
+        font-size: 2em;
+        margin-bottom: 30px;
+    }
+    
+    .image-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 20px;
+    }
+    
+    .image-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        transition: transform 0.3s ease;
+    }
+    
+    .image-grid img:hover {
+        transform: scale(1.05);
+    }
+    
+    .video-container {
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    video {
+        width: 100%;
+        max-width: 800px;
+        border-radius: 8px;
+    }
+    #submitButton {
+        height: 40px;
+    }
+    
+    

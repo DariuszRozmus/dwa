@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">   
+</head>
+<body>
+    <script src="script.js"></script>
+
+    <header>
+        <img class="signature" src="signature2_blue.jpg">
+        <nav>
+            <button id="bt1" onclick="location.href='str1.html'">Home</button>
+            <button id="bt2" onclick="location.href='str2.html'">Kontakt</button>
+            <button id="bt3" onclick="location.href='str3.html'">Galeria</button>
+        </nav>
+    </header>
+   
+    
+
+    <div class="container">
+        <div class="text">
+        
+            <p class="bigger">Pomóż dziecku rozwinąć skrzydła</p>
+            <p class="bigger">w przedmiotach ścisłych!</p>
+    
+        <br>
+        <p>
+        Jestem Dariusz Rozmus i wiem, jak wymagające mogą być przedmioty ścisłe w technikum, 
+        zwłaszcza na kierunkach takich jak elektronika czy elektrotechnika. 
+        </p>
+        
+        <p>
+        Sam przeszedłem przez tę drogę - jako uczeń Zespołu Szkół Łączności w Krakowie
+        zdobywałem wiedzę z zakresu matematyki, fizyki, elektrotechniki.
+        </p>
+
+        <p>
+        A co ważniejsze - osiągnąłem sukcesy, w tym tytuł Laureata  
+        Olimpiady Elektrotechnicznej AGH.
+        </p>
+
+        </div>
+        <img class="image" src="darek1.png">
+    </div>
+       
+    <div class="opinions">
+        <div class="opinion">
+            <p>
+                <!-- <div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div> -->
+                <p><img class="face" src="woman.png"></p>
+                
+                <b>Iwona</b>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                5/5
+            </p>
+            Bardzo dobry korepetytor, który posiada ogromna wiedzę z przedmiotów ścisłych 
+            , dobrze tłumaczy, dzięki korepetycjom
+            u pana Dariusza syn poprawił oceny i nie stresuje się już 
+            przed sprawdzianami. Dziekuje Panie Darku! 
+
+        </div>
+        <div class="opinion">
+            <p>
+                <!-- <div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div> -->
+                <p><img class="face" src="woman.png"></p>
+                
+                <b>Dorota</b> 
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                5/5
+            </p>
+            Jestem bardzo zadowolona z wyboru korepetycji u Darka. 
+            Syn miał bardzo dobre relacje z prowadzącym i co najważniejsze poprawił oceny  
+            i zyskał pewność siebie i swojej wiedzy.
+
+        </div>
+    </div>
+
+    <div class="opinions">
+        <div class="opinion2">
+            <p>
+                <!-- <div>Icons made from <a href="https://www.onlinewebfonts.com/icon">svg icons</a>is licensed by CC BY 4.0</div> -->
+                <p><img class="face" src="woman.png"></p>
+                
+                <b>Anna</b>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                <i class="fas fa-star" style="color: gold;"></i>
+                5/5
+            </p>
+            Bardzo dobry korepetytor,
+             cierpliwie wszystko wytłumaczy, 
+             syn wszystko rozumie i chętnie się uczy. Polecam.
+
+        </div>
+    </div>
+
+    <!-- <div class="feet">
+        Kontakt: 883 174 901
+    </div> -->
+
+    <footer>
+        <p><img width="10%" src="signature2_blue.jpg"></p>
+        
+            <p><a href="#kontakt">Kontakt</a></p>
+            <p><a href="#privacy">Polityka Prywatności</a></p>
+            
+            <div id="clock">00:00:00</div>
+  
+            <script>
+              function updateClock() {
+                const now = new Date();
+                const hours = String(now.getHours()).padStart(2, '0');
+                const minutes = String(now.getMinutes()).padStart(2, '0');
+                const seconds = String(now.getSeconds()).padStart(2, '0');
+                
+                document.getElementById('clock').textContent = `${hours}:${minutes}:${seconds}`;
+              }
+              
+              // Aktualizacja zegara co sekundę
+              setInterval(updateClock, 1000);
+              updateClock(); // Wywołanie, żeby pokazać czas od razu
+            </script>
+        
+    </footer>
+    
+
+
+</body>
